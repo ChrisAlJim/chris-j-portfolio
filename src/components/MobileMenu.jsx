@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
+export const MobileMenu = ({ menuOpen, setMenuOpen, theme, toggleTheme }) => {
   return (
     <div
       className={`fixed top-0 left-0 w-full bg-[rgba(10,10,10,0.8)] z-40 flex flex-col items-center justify-center
@@ -68,10 +68,10 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
         Contact
       </a>
       <a
-        className={`text-7xl font-semibold text-white my-4 transform transition-transform duration-300  
-    `}
+        onClick={toggleTheme}
+        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 cursor-pointer`}
       >
-        &#9788;
+        {theme === "light" ? "(0_0)" : "(-_-)"}
       </a>
     </div>
   );

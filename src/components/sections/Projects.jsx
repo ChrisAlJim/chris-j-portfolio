@@ -10,12 +10,12 @@ export const Projects = () => {
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-cyan-500 to-cyan-400 bg-clip-text text-transparent text-center">
             {" "}
-            Featured Projects
+            Featured Projects ◝(ᵔᗜᵔ)◜
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-cyan-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
-              <h3 className="text-xl font-bold mb-2">BrainBud</h3>
-              <p className="text-gray-400 mb-4">
+            <div className="p-6 rounded-xl border border-black/10 dark:border-white/10 hover:-translate-y-1 hover:border-cyan-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
+              <h3 className="text-xl text-black dark:text-white font-bold mb-2">BrainBud</h3>
+              <p className="text-black dark:text-gray-400 mb-4">
                 BrainBud is a full-stack web application designed to help users engage more deeply with the YouTube content they watch. By entering a YouTube URL, a custom prompt, and a desired number of responses, users receive AI-generated insights, summaries, or creative ideas based on the video.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
@@ -43,14 +43,14 @@ export const Projects = () => {
             </div>
             <div
               className="
-              glass p-6 rounded-xl border border-white/10 
+              p-6 rounded-xl border border-black/10 dark:border-white/10
               hover:-translate-y-1 hover:border-cyan-500/30
               hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
               transition-all
             "
             >
-              <h3 className="text-xl font-bold mb-2">Benevolo</h3>
-              <p className="text-gray-400 mb-4">
+              <h3 className="text-xl text-black dark:text-white font-bold mb-2">Benevolo</h3>
+              <p className="text-black dark:text-gray-400 mb-4">
                 Benevolo is a community-driven web application that connects homebound individuals with local volunteers. Users can post tasks such as errands, household help, or deliveries while volunteers browse and accept tasks within their ZIP code. The platform fosters compassion and accessibility by making it easy for volunteers to offer help where it’s needed most.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">

@@ -1,16 +1,18 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+
 @layer base {
   html,
   body {
     margin: 0;
     padding: 0;
     font-family: "Space Grotesk", sans-serif;
-    background: #0a0a0a; 
-    color: #1450c9;
+    background: #f3f4f6; 
+    color: #0a0a0a;
   }
 }
-
 
 @layer utilities {
   @keyframes blink {
