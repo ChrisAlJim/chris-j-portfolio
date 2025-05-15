@@ -12,7 +12,13 @@ import { Contact } from "./components/sections/Contact";
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) return savedTheme;
+
+    const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    return systemPrefersDark ? "dark" : "light";
+  });
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme")
@@ -41,7 +47,7 @@ function App() {
       <div
         className={`min-h-screen transition-opacity duration-700 ${
           isLoaded ? "opacity-100" : "opacity-0"
-        } bg-white dark:bg-black text-blackdark:text-gray-100`}
+        } bg-white dark:bg-black text-black dark:text-gray-100`}
       >
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} theme={theme} toggleTheme={toggleTheme}/>
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} theme={theme} toggleTheme={toggleTheme}/>

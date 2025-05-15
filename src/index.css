@@ -9,8 +9,16 @@
     margin: 0;
     padding: 0;
     font-family: "Space Grotesk", sans-serif;
-    background: #f3f4f6; 
+    background: #f3f4f6;
     color: #0a0a0a;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html,
+    body {
+      background: #0a0a0a;
+      color: #f3f4f6;
+    }
   }
 }
 
