@@ -59,7 +59,7 @@ export const About = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+            <div className="p-6 rounded-xl border-black/10 dark:border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl text-black dark:text-white font-bold mb-4"> (⌐⊙_⊙) Education </h3>
               <ul className="list-disc list-inside text-black dark:text-gray-300 space-y-2">
                 <a>
@@ -71,7 +71,7 @@ export const About = () => {
                 </li>
               </ul>
             </div>
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+            <div className="p-6 rounded-xl border-black/10 dark:border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl text-black dark:text-white font-bold mb-4"> ( ◡̀_◡́)ᕤ Relevant Experience </h3>
               <div className="space-y-4 text-black dark:text-gray-300">
                 <div>
